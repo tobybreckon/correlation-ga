@@ -3,11 +3,11 @@
 A C++ Genetic Algorithm (GA) example based on using correlation of a selected image region implemented as a header class
 with an interface to allow for variable population size (P), mutation (M) and cross-over (C) probability settings.
 
-- *population*: random set of _(X x Y)_ dimension regions from the image each centred at _(xi,yi)_.
-- *fitness function*: correlation between mouse selected (click and drag) image region and each region
-- *selection*: fitness proportional selection
-- *cross-over*: uniform cross-over based on crossing _xi_ and _yi_ centre co-ordinates between two selected regions  
-- *mutation*: randomly perturb bit-pattern of  _xi_ and _yi_ centre co-ordinates of
+- **population**: random set of _(X x Y)_ dimension regions from the image each centred at _(xi,yi)_.
+- **fitness function**: correlation between mouse selected (click and drag) image region and each region
+- **selection**: fitness proportional selection
+- **cross-over**: uniform cross-over based on crossing _xi_ and _yi_ centre co-ordinates between two selected regions  
+- **mutation**: randomly perturb bit-pattern of  _xi_ and _yi_ centre co-ordinates of
 
 Requires [OpenCV](http://www.opencv.org) - all tested with OpenCV 2.4.x / 3.x and GCC (Linux) and known to work with MS Visual Studio 20xx on Win32 / Win64.
 

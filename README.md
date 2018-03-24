@@ -1,14 +1,15 @@
 # C++ Genetic Algorithm - Teaching Example
 
-A C++ Genetic Algorithm (GA) example based on using correlation of a selected image region.
+A C++ Genetic Algorithm (GA) example based on using correlation of a selected image region implemented as a header class
+with an interface to allow for variable population size (P), mutation (M) and cross-over (C) probability settings.
 
-- population: random set of _(X x Y)_ dimension regions from the image each centred at _(xi,yi)_.
-- fitness function: correlation between mouse selected (click and drag) image region and each region
-- selection: fitness proportional selection
-- cross-over: uniform cross-over based on crossing _xi_ and _yi_ centre co-ordinates between two selected regions  
-- mutation: randomly perturb bit-pattern of  _xi_ and _yi_ centre co-ordinates of
+- *population*: random set of _(X x Y)_ dimension regions from the image each centred at _(xi,yi)_.
+- *fitness function*: correlation between mouse selected (click and drag) image region and each region
+- *selection*: fitness proportional selection
+- *cross-over*: uniform cross-over based on crossing _xi_ and _yi_ centre co-ordinates between two selected regions  
+- *mutation*: randomly perturb bit-pattern of  _xi_ and _yi_ centre co-ordinates of
 
-All tested with OpenCV 2.4.x / 3.x and GCC (Linux) and known to work with MS Visual Studio 200x on Win32 / Win64.
+Requires [OpenCV](http://www.opencv.org) - all tested with OpenCV 2.4.x / 3.x and GCC (Linux) and known to work with MS Visual Studio 20xx on Win32 / Win64.
 
 ---
 
@@ -25,12 +26,14 @@ Demo source code is provided _"as is"_ to aid your learning and understanding.
 Download each file as needed or to download the entire repository and run each try:
 
 ```
-git clone https://github.com/tobybreckon/cpp-examples-ml.git
-cd cpp-examples-ml
+git clone https://github.com/tobybreckon/correlation-ga.git
+cd correlation-ga
 cmake .
 make
-cd <sub directory of one of the examples>
 ./correlation_ga
+< use sliders to select population size (P), mutation (M) and cross-over (C) probability settings >
+< use mouse to click/drag to select image region >
+< x key to exit / r key to reset  >
 ```
 
 The GA example runs with a webcam connected or from a command line supplied video file of a format OpenCV supports on your system (otherwise edit the code to provide your own image source). _N.B._ you may need to change the line near the top that specifies the camera device to use on this example - change "0" if you have one webcam, I have it set to "1" to skip my built-in laptop webcam and use the connected USB camera.

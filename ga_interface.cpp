@@ -93,7 +93,7 @@ int main( int argc, char** argv )
   const string windowName2 = "Selected Region / Object"; // window name
 
   bool keepProcessing = true;	// loop control flag
-  char  key;			        // user input
+  int  key;			        			// user input
   int  EVENT_LOOP_DELAY = 200;	// delay for GUI window (slow down for visualization
 
   int mutation_i = 3;          // x 0.01 == mutation rate

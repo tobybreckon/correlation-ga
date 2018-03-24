@@ -1,4 +1,4 @@
-# this file is setup to build everything for the ML examples
+# CMake Build File - GA teaching example
 
 cmake_minimum_required (VERSION 2.6)
 cmake_policy(SET CMP0037 OLD)

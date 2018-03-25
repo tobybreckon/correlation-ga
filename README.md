@@ -5,12 +5,12 @@ A Genetic Algorithm (GA) example based on using correlation of a selected image 
 
 Illustrates all of the key elements of a GA approach including:
 
-- **genes**: _(x~i,y~i)_ locations of image regions
-- **population**: random set of _(X x Y)_ dimension regions from the image each at _(x~i,y~i)_.
+- **genes**: _(xi,yi)_ locations of image regions
+- **population**: random set of _(X x Y)_ dimension regions from the image each at _(xi,yi)_.
 - **fitness function**: correlation between mouse selected (click and drag) image region and each region in the population.
 - **selection**: fitness proportional selection, roulette wheel.
-- **cross-over**: uniform cross-over based on crossing _x~i_ and _y~i_ co-ordinates between two selected regions.
-- **mutation**: randomly perturb bit-pattern of  _x~i_ and _y~i_ co-ordinates of each region in the population.
+- **cross-over**: uniform cross-over based on crossing _xi_ and _yi_ co-ordinates between two selected regions.
+- **mutation**: randomly perturb bit-pattern of  _xi_ and _yi_ co-ordinates of each region in the population.
 
 -- within a readily adaptable C++ class structure
 

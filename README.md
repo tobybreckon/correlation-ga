@@ -11,6 +11,9 @@ with an interface to allow for variable population size (P), mutation (M) and cr
 
 Requires [OpenCV](http://www.opencv.org) - all tested with OpenCV 2.4.x / 3.x and GCC (Linux) and known to work with MS Visual Studio 20xx on Win32 / Win64.
 
+Example video (click to watch):
+[![Example Video](http://img.youtube.com/vi/7cjkJ7xa84Q/0.jpg)](http://www.youtube.com/watch?v=7cjkJ7xa84Q)
+
 ---
 
 ### Background:

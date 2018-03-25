@@ -7,7 +7,7 @@ with an interface to allow for variable population size (P), mutation (M) and cr
 - **fitness function**: correlation between mouse selected (click and drag) image region and each region in the population.
 - **selection**: fitness proportional selection, roulette wheel.
 - **cross-over**: uniform cross-over based on crossing _xi_ and _yi_ centre co-ordinates between two selected regions.
-- **mutation**: randomly perturb bit-pattern of  _xi_ and _yi_ centre co-ordinates of each region in the population. 
+- **mutation**: randomly perturb bit-pattern of  _xi_ and _yi_ centre co-ordinates of each region in the population.
 
 Requires [OpenCV](http://www.opencv.org) - all tested with OpenCV 2.4.x / 3.x and GCC (Linux) and known to work with MS Visual Studio 20xx on Win32 / Win64.
 
@@ -33,7 +33,7 @@ make
 ./correlation_ga
 < use sliders to select population size (P), mutation (M) and cross-over (C) probability settings >
 < use mouse to click/drag to select image region >
-< x key to exit / r key to reset  >
+< hold down - x key to exit / r key to reset  >
 ```
 
 The GA example runs with a webcam connected or from a command line supplied video file of a format OpenCV supports on your system (otherwise edit the code to provide your own image source).

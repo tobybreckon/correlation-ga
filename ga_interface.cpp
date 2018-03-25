@@ -98,7 +98,7 @@ int main( int argc, char** argv )
 
   int mutation_i = 3;          // x 0.01 == mutation rate
   int crossover_i = 40;         // x 0.01 == crossover rate
-  int population = 100;         // population size
+  int population = 250;         // population size
 
   // if command line arguments are provided try to read image/video_name
   // otherwise default to capture from attached H/W camera

@@ -1,7 +1,7 @@
 # C++ Genetic Algorithm - Teaching Example
 
-A Genetic Algorithm (GA) example based on using correlation of a selected image region implemented as a C++ header class
-(_ga.h_) with an interface (_ga_interface.cpp_) to allow for variable population size (P), mutation (M) and cross-over (C) probability settings.
+A Genetic Algorithm (GA) example based on using correlation of a selected image region against all other regions in the image to find the location of selection.
+Implemented as a C++ header class (_ga.h_) with an interface (_ga_interface.cpp_) to allow for variable population size (P), mutation (M) and cross-over (C) probability settings.
 
 Illustrates all of the key elements of a GA approach including:
 
@@ -12,7 +12,7 @@ Illustrates all of the key elements of a GA approach including:
 - **cross-over**: uniform cross-over based on crossing _xi_ and _yi_ co-ordinates between two selected regions.
 - **mutation**: randomly perturb bit-pattern of  _xi_ and _yi_ co-ordinates of each region in the population.
 
--- within a readily adaptable C++ class structure
+-- within a readily adaptable C++ class structure.
 
 Requires [OpenCV](http://www.opencv.org) - all tested with OpenCV 2.4.x / 3.x and GCC (Linux) and known to work with MS Visual Studio 20xx on Win32 / Win64.
 
@@ -46,7 +46,7 @@ make
 
 The GA example runs with a webcam connected or from a command line supplied video file of a format OpenCV supports on your system (otherwise edit the code to provide your own image source).
 
-_N.B._ you may need to change the line near the top that specifies the camera device to use on this example - change "0" if you have one webcam, I have it set to "1" to skip my built-in laptop webcam and use the connected USB camera.
+_N.B._ you may need to change the line near the top that specifies the camera device to use on this example - change "0" if you have one webcam, I have to set to "1" to skip my built-in laptop webcam and use the connected USB camera.
 
 ---
 

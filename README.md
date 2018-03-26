@@ -5,7 +5,7 @@ A Genetic Algorithm (GA) example based on using correlation of a selected image 
 
 Illustrates all of the key elements of a GA approach including:
 
-- **genes**: _(xi,yi)_ locations of image regions
+- **genes / phenotypes**: _(xi,yi)_ locations of image regions (i.e. chromosomes / genetic representation)
 - **population**: random set of _(X x Y)_ dimension regions from the image each at _(xi,yi)_.
 - **fitness function**: correlation between mouse selected (click and drag) image region and each region in the population.
 - **selection**: fitness proportional selection, roulette wheel.

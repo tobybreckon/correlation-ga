@@ -13,8 +13,12 @@
 
 /******************************************************************************/
 
-#include <cv.h>   		// open cv general include file
-#include <highgui.h>	// open cv GUI include file
+// includes for OpenCV 3.x and onward
+
+#include "opencv2/videoio.hpp"
+#include "opencv2/highgui.hpp"
+#include "opencv2/imgproc.hpp"
+
 #include <iostream>		// standard C++ I/O
 #include <bitset>	    // C++ bitset
 
@@ -206,7 +210,7 @@ class correlationGA
 
             matchTemplate(image(Rect(gene.x, gene.y,
                           correlation_template.cols, correlation_template.rows)),
-                          correlation_template, result, CV_TM_SQDIFF);
+                          correlation_template, result, TM_SQDIFF);
 
             // draw current fitness evaulation
 

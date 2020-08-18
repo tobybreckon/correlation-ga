@@ -8,27 +8,14 @@
 
 // License : LGPL - http://www.gnu.org/licenses/lgpl.html
 
-#include <cv.h>   		 // open cv general include file
-
 #include <iostream>		// standard C++ I/O
 #include <vector>			// standard C++
 
+// includes for OpenCV 3.x and onward
 
-#if (CV_MAJOR_VERSION > 2)
-
-	// includes for OpenCV 3.x and onward
-
-	#include "opencv2/videoio.hpp"
-	#include "opencv2/highgui.hpp"
-	#include "opencv2/imgproc.hpp"
-
-#else
-
-	// includes for older OpenCV 2.4.x
-
-	#include "highgui.h"		// open cv GUI include file
-
-#endif
+#include "opencv2/videoio.hpp"
+#include "opencv2/highgui.hpp"
+#include "opencv2/imgproc.hpp"
 
 using namespace cv; // OpenCV API is in the C++ "cv" namespace
 using namespace std; // OpenCV API is in the C++ "cv" namespace
@@ -65,7 +52,7 @@ void onMouseSelect( int event, int x, int y, int, void* image)
 
     switch( event )
     {
-    case CV_EVENT_LBUTTONDOWN:
+    case EVENT_LBUTTONDOWN:
         if (!selectionComplete)
         {
             origin = Point(x,y);
@@ -73,7 +60,7 @@ void onMouseSelect( int event, int x, int y, int, void* image)
             selectObject = true;
         }
         break;
-    case CV_EVENT_LBUTTONUP:
+    case EVENT_LBUTTONUP:
         selectObject = false;
         if( selection.width > 0 && selection.height > 0 )
             selectionComplete = true;

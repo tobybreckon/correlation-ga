@@ -19,10 +19,10 @@ IF ( WIN32 )
    MESSAGE( "WINDOWS CONFIG" )
 ENDIF ( WIN32 )
 
-find_package( OpenCV REQUIRED )
-# MESSAGE ( "OPENCV CONFIG" )
-# MESSAGE ( ${OpenCV_LIBS} )
-
 project(ga)
+find_package( OpenCV REQUIRED )
+MESSAGE ( "OPENCV CONFIG" )
+MESSAGE ( ${OpenCV_LIBS} )
+
 add_executable(correlation_ga ga_interface.cpp)
 target_link_libraries(correlation_ga ${OpenCV_LIBS} )
